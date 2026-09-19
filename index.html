@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrisisRelay Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>🛡️ CrisisRelay</h2>
+    <!-- Dynamic Quote Container -->
+    <p id="safetyQuote" style="font-style: italic; color: #38bdf8; font-size: 0.95rem; margin-bottom: 24px; min-height: 22px;">
+        "Loading safety parameters..."
+    </p>
+    
+     <div class="lang-group">
+            <label class="lang-card">
+                <input type="radio" name="lang" value="EN" checked>
+                <span>English</span>
+            </label>
+            <label class="lang-card">
+                <input type="radio" name="lang" value="HI">
+                <span>हिंदी</span>
+            </label>
+            <label class="lang-card">
+                <input type="radio" name="lang" value="MR">
+                <span>मराठी</span>
+            </label>
+        </div>
+        
+    <div id="setupForm">
+        <input type="text" id="phone" value="+91 9876543210" placeholder="Emergency Phone (with +91)">
+        <input type="password" id="safePin" value="1234" placeholder="Set 4-Digit Safe Disarm PIN" maxlength="4">
+        <input type="password" id="duressPin" value="9999" placeholder="Set 4-Digit Silent Duress PIN" maxlength="4">
+    </div>
+
+    <button class="circle-btn" id="actionBtn" onclick="handleMainTap()">START</button>
+
+        <!-- UPGRADED: Premium Crimson Emergency Override Banner -->
+    <div id="instantSosLink" class="sos-banner-wrapper" onclick="triggerInstantCloudSos()">
+        <span class="sos-banner-icon">⚠️</span>
+        <div class="sos-banner-text">
+            <strong>FORCE INSTANT SOS OVERRIDE</strong>
+            <span>Bypass cloud timer & alert contacts immediately</span>
+        </div>
+    </div>
+
+    <div class="pin-area" id="pinArea">
+        <input type="password" id="enteredPin" placeholder="Enter PIN to disarm" maxlength="6">
+        <button id="submitPinBtn" onclick="verifyPin()">SUBMIT PIN</button>
+    </div>
+
+    <div class="status" id="statusText">System: Standby</div>
+</div>
+
+<!-- STEALTH COVERT OVERLAY MASKING DEVICE WITH PREMIUM AUDIO WAVE VISUALIZER -->
+<div id="covertCrashScreen" class="covert-mask-screen">
+    <!-- Blinking dot and caption for hackathon jury evaluation -->
+    <div style="position: absolute; top: 30px; left: 30px; display: flex; align-items: center; gap: 8px; font-family: sans-serif; font-size: 0.85rem; font-weight: 600; color: #475569; letter-spacing: 0.5px;">
+        <span class="stealth-rec-dot"></span>
+        [DEMO MODE] SECURE CLOUD AUDIO CAPTURE LAYER ACTIVE
+    </div>
+
+    <!-- HIGH-END AUDIO WAVEFORM VISUALIZER TRACK -->
+    <div class="audio-wave-container">
+        <span class="wave-bar"></span>
+        <span class="wave-bar"></span>
+        <span class="wave-bar"></span>
+        <span class="wave-bar"></span>
+        <span class="wave-bar"></span>
+        <span class="wave-bar"></span>
+        <span class="wave-bar"></span>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
